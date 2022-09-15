@@ -12,6 +12,7 @@ public:
 	~Matrix();
 	int get_data();
 	int show_data();
+	int sort_data();
 	int addMatrix(Matrix& m);
 	int MultiplyMatrix(Matrix& m1, Matrix& m2);
 };
@@ -21,7 +22,7 @@ Matrix::~Matrix() { delete[] data; }
 int Matrix::get_data() {
 	for (int i = 0; i < rows; ++i) {
 		for (int j = 0; j < cols; ++j) {
-			data[i * cols + j] = rand()%10;
+			data[i * cols + j] = rand()%100;
 		}
 	}
 	return 0;
@@ -34,6 +35,18 @@ int Matrix::show_data() {
 		std::cout << std::endl;
 	}
 	std::cout << std::endl;
+	return 0;
+}
+int Matrix::sort_data() {
+	for (int i = 0; i < rows * cols; ++i) {
+		for (int j = 1; j < rows * cols - i; ++j) {
+			if (data[j - 1] > data[j]) {
+				int tmp = data[j - 1];
+				data[j - 1] = data[j];
+				data[j] = tmp;
+			}
+		}
+	}
 	return 0;
 }
 int Matrix::addMatrix(Matrix& m) {

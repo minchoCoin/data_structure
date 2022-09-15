@@ -17,6 +17,7 @@ private:
 	static int free;
 	int start;
 	int finish;
+	int term;
 public:
 	Matrix(int r, int c);
 	~Matrix();
@@ -27,7 +28,7 @@ public:
 	int MultiplyMatrix(Matrix& m1, Matrix& m2);
 };
 
-Matrix::Matrix(int r, int c) : rows(r), cols(c), start(free), finish(start + rows * cols) { free += rows * cols; }
+Matrix::Matrix(int r, int c) : rows(r), cols(c), start(free), finish(start + rows * cols) { free += rows * cols; term = rows * cols; }
 Matrix::~Matrix() { free -= rows * cols; }
 int Matrix::get_data() {
 	for (int i = 0; i < rows; ++i) {
@@ -38,12 +39,13 @@ int Matrix::get_data() {
 	return 0;
 }
 int Matrix::sort_data() {
-	for (int i = 0; i < start+rows*cols-1; ++i) {
-		for (int j = 0; j < start + rows * cols -1 - i; ++j) {
-			if (data[j] > data[j + 1]) {
-				int tmp = data[j];
-				data[j] = data[j + 1];
-				data[j + 1] = tmp;
+	for (int i = start; i < start + term; ++i) {
+		for (int j = start + 1; j < start + term; ++j) {
+			if (data[j - 1] > data[j]) {
+				int tmp = data[j - 1];
+				data[j - 1] = data[j];
+				data[j] = tmp;
+				
 			}
 		}
 	}

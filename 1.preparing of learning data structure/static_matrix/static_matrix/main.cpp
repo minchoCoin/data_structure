@@ -18,8 +18,10 @@ int main(void) {
 	mA.get_data();
 	mA.show_data();
 
-	cout << "mA1(sorted) : " << endl;
+	cout << "mA1 : " << endl;
 	mA1.get_data();
+	mA1.show_data();
+	cout << "mA1(sorted) : " << endl;
 	mA1.sort_data();
 	mA1.show_data();
 
