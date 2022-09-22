@@ -1,0 +1,32 @@
+﻿  bag.cpp
+D:\Github\data_structure\data_structure\bag\bag\bag\bag.cpp(118,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+D:\Github\data_structure\data_structure\bag\bag\bag\bag.cpp(120,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+D:\Github\data_structure\data_structure\bag\bag\bag\bag.cpp(122,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+D:\Github\data_structure\data_structure\bag\bag\bag\bag.cpp(123,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+D:\Github\data_structure\data_structure\bag\bag\bag\bag.cpp(125,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+D:\Github\data_structure\data_structure\bag\bag\bag\bag.cpp(126,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+  bag.vcxproj -> D:\Github\data_structure\data_structure\bag\bag\x64\Debug\bag.exe
