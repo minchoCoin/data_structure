@@ -1,0 +1,43 @@
+﻿  set.cpp
+C:\Users\user\Desktop\set\set\set\set.cpp(202,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\set\set\set\set.cpp(247,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(249,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(253,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(255,14): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(256,14): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(257,14): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(258,14): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\user\Desktop\set\set\set\set.cpp(259,13): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+  set.vcxproj -> C:\Users\user\Desktop\set\set\Debug\set.exe
